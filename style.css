@@ -22,7 +22,7 @@ html {
 
 body {
     font-family: var(--font-secondary);
-    background: var(--color-black);
+    background: var(--color-pink);
     color: var(--color-white);
     line-height: 1.6;
     min-height: 100vh;
@@ -74,7 +74,7 @@ nav {
 #nav-links li a:hover,
 #nav-links li a.active {
     background: var(--color-pink);
-    color: var(--color-black);
+    color: var(--color-pink);
     border-color: var(--color-pink);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(255, 195, 0, 0.4);
@@ -139,13 +139,13 @@ nav {
     text-align: center;
 }
 #dinosaurs {
-    background: linear-gradient(to bottom, var(--color-black), var(--color-dark-gray));
+    background: linear-gradient(to bottom, var(--color-pink), var(--color-dark-gray));
 }
 #dinosaurs h2, #movies h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
     color: var(--color-pink);
-    text-shadow: 2px 2px 5px var(--color-red);
+    text-shadow: 2px 2px 5px var(--color-pink);
 }
 
 .character-grid, .movie-container {
@@ -207,7 +207,7 @@ nav {
 
 #movie-detail-container button {
     background: var(--color-pink);
-    color: var(--color-black);
+    color: var(--color-pink);
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
@@ -269,7 +269,7 @@ footer#more h2 {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: var(--color-black);
+        background: var(--color-pink);
         flex-direction: column;
         justify-content: center;
         align-items: center;
