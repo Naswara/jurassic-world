@@ -373,42 +373,87 @@ footer#more h2 {
     font-family: var(--font-secondary);
 }
 
-/* Card Game Container */
-#games .game-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 0 2rem 4rem;
+/* GAMES SECTION */
+#games {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #000000, rgba(255, 153, 204, 0.05));
+  border-radius: 20px;
+  margin-top: 4rem;
 }
 
-/* Card Tampilan Game */
-#games .game-card {
-  background-color: #0d0d0d; /* hitam pekat */
-  border: 2px solid #ff66cc; /* pink terang */
-  border-radius: 15px;
-  padding: 2rem 3rem;
-  color: #ff3399; /* pink tua */
-  font-weight: bold;
-  font-size: 1.4rem;
+/* Judul "Games" */
+#games .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: var(--color-pink-light);
   text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-
-  /* Glow effect */
-  box-shadow:
-    0 0 10px rgba(255, 102, 204, 0.4),
-    0 0 20px rgba(255, 102, 204, 0.3),
-    0 0 30px rgba(255, 102, 204, 0.2);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px rgba(255, 153, 204, 0.3);
 }
 
-/* Hover: Glow lebih kuat */
-#games .game-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 0 15px #ff66cc,
-    0 0 25px #ff3399,
-    0 0 40px rgba(255, 51, 153, 0.7);
+/* Grid Game Card */
+#games .character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+#games .character-card {
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 2px solid var(--color-pink-dark);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 153, 204, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+#games .character-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 153, 204, 0.4);
+}
+
+/* Game Image */
+#games .character-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-pink-dark);
+}
+
+/* Nama Game */
+#games .character-card h3 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--color-pink-dark);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Deskripsi Game */
+#games .game-desc {
+  margin: 0.5rem 1rem;
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+/* Tombol Play Now */
+#games .game-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background-color: var(--color-pink-light);
+  color: var(--color-black);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#games .game-link:hover {
+  background-color: var(--color-pink-dark);
+  color: var(--color-white);
 }
