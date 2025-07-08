@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jurassic Park Films</title>
+  <title>Jurassic Park Universe</title>
   <style>
     :root {
       --color-black: #000;
@@ -29,7 +29,7 @@
       margin-top: 2rem;
     }
 
-    .movie-container, .cast-container {
+    .movie-container, .cast-container, .gallery-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
@@ -38,7 +38,7 @@
       margin: auto;
     }
 
-    .movie-card, .cast-card {
+    .movie-card, .cast-card, .gallery-card {
       background: var(--color-dark-gray);
       border: 2px solid var(--color-pink);
       border-radius: 12px;
@@ -47,13 +47,13 @@
       padding: 1rem;
     }
 
-    .movie-card img, .cast-card img {
+    .movie-card img, .cast-card img, .gallery-card img {
       width: 100%;
       height: auto;
       border-bottom: 2px solid var(--color-pink);
     }
 
-    .movie-card h3, .cast-card h3 {
+    .movie-card h3, .cast-card h3, .gallery-card h3 {
       margin: 1rem 0 0.5rem;
       color: var(--color-pink-light);
     }
@@ -78,70 +78,80 @@
 <body>
   <h2>The Films</h2>
   <div class="movie-container">
-
-    <!-- Jurassic Park (1993) -->
     <div class="movie-card">
       <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg" alt="Jurassic Park (1993)">
       <h3>Jurassic Park (1993)</h3>
     </div>
-
-    <!-- The Lost World (1997) -->
     <div class="movie-card">
       <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Jurassic_Park_The_Lost_World_poster.jpg" alt="The Lost World (1997)">
       <h3>The Lost World (1997)</h3>
     </div>
-
-    <!-- Jurassic Park III (2001) -->
     <div class="movie-card">
       <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Jurassic_Park_III.jpg" alt="Jurassic Park III (2001)">
       <h3>Jurassic Park III (2001)</h3>
     </div>
-
-    <!-- Jurassic World (2015) -->
     <div class="movie-card">
       <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Jurassic_World_poster.jpg" alt="Jurassic World (2015)">
       <h3>Jurassic World (2015)</h3>
     </div>
-
   </div>
 
   <h2>Main Cast</h2>
   <div class="cast-container">
     <div class="cast-card">
       <img src="dr-alan-grant-jurassicpark.png" alt="Dr. Alan Grant">
-      <h3>Dr. Alan Grant</h3>
+      <h3>Sam Neill as Dr. Alan Grant</h3>
     </div>
     <div class="cast-card">
       <img src="dr-ellie-sattler-jurassicpark.png" alt="Dr. Ellie Sattler">
-      <h3>Dr. Ellie Sattler</h3>
+      <h3>Laura Dern as Dr. Ellie Sattler</h3>
     </div>
     <div class="cast-card">
       <img src="dr-ian-malcolm-jurassicpark.png" alt="Dr. Ian Malcolm">
-      <h3>Dr. Ian Malcolm</h3>
+      <h3>Jeff Goldblum as Dr. Ian Malcolm</h3>
     </div>
     <div class="cast-card">
-      <img src="https://imgbin.com/png/2GVnvYr/jeff-goldblum-png" alt="Jeff Goldblum">
-      <h3>Jeff Goldblum</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Chris_Pratt_SDCC_2018_%28cropped%29.png" alt="Chris Pratt">
+      <h3>Chris Pratt as Owen Grady</h3>
     </div>
     <div class="cast-card">
-      <img src="https://imgbin.com/png/ZbQKcH2/julianne-moore-png" alt="Julianne Moore">
-      <h3>Julianne Moore</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Bryce_Dallas_Howard_by_Gage_Skidmore_2.jpg" alt="Bryce Dallas Howard">
+      <h3>Bryce Dallas Howard as Claire Dearing</h3>
     </div>
     <div class="cast-card">
-      <img src="https://imgbin.com/png/3NPGahWT/sam-neill-png" alt="Sam Neill">
-      <h3>Sam Neill</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Julianne_Moore_Cannes_2018.jpg" alt="Julianne Moore">
+      <h3>Julianne Moore as Sarah Harding</h3>
     </div>
     <div class="cast-card">
-      <img src="https://imgbin.com/png/ppgbjhdw/laura-dern-png" alt="Laura Dern">
-      <h3>Laura Dern</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/T%C3%A9a_Leoni_at_the_2007_Tribeca_Film_Festival.jpg" alt="Téa Leoni">
+      <h3>Téa Leoni as Amanda Kirby</h3>
     </div>
-    <div class="cast-card">
-      <img src="https://imgbin.com/png/3NPGahWT/chris-pratt-png" alt="Chris Pratt">
-      <h3>Chris Pratt</h3>
+  </div>
+
+  <h2>Games</h2>
+  <ul style="max-width: 800px; margin: 2rem auto; font-size: 1.2rem;">
+    <li><a href="https://store.steampowered.com/app/648350/Jurassic_World_Evolution/" target="_blank">Jurassic World Evolution – Build your own dinosaur theme park!</a></li>
+    <li><a href="https://www.lego.com/en-us/themes/jurassic-world" target="_blank">LEGO Jurassic World – Play through the films in LEGO form.</a></li>
+    <li><a href="https://arcade1up.com/products/jurassic-park" target="_blank">Jurassic Park Arcade – Classic shooting game experience.</a></li>
+  </ul>
+
+  <h2>Science</h2>
+  <div class="gallery-container">
+    <div class="gallery-card">
+      <a href="https://jurassicpark.fandom.com/wiki/Genetic_engineering" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/DNA_Overview.png" alt="DNA Science">
+        <h3>Genetic Engineering</h3>
+      </a>
     </div>
-    <div class="cast-card">
-      <img src="https://imgbin.com/png/PpGbjhDw/bryce-dallas-howard-png" alt="Bryce Dallas Howard">
-      <h3>Bryce Dallas Howard</h3>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <div class="gallery-card">
+      <a href="https://jurassicpark.fandom.com/wiki/Gallery" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg" alt="Gallery">
+        <h3>Behind the Scenes & Art</h3>
+      </a>
     </div>
   </div>
 </body>
