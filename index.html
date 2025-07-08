@@ -1,127 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jurassic Park Universe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurassic Park Films</title>
+  <style>
+    :root {
+      --color-black: #000;
+      --color-dark-gray: #1a1a1a;
+      --color-pink: #a83279;
+      --color-pink-light: #ffc0cb;
+      --color-white: #fff;
+    }
+
+    body {
+      background: var(--color-black);
+      color: var(--color-white);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--color-pink-light);
+      margin-top: 2rem;
+    }
+
+    .movie-container, .cast-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .movie-card, .cast-card {
+      background: var(--color-dark-gray);
+      border: 2px solid var(--color-pink);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .movie-card img, .cast-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid var(--color-pink);
+    }
+
+    .movie-card h3, .cast-card h3 {
+      margin: 1rem 0 0.5rem;
+      color: var(--color-pink-light);
+    }
+
+    .cast {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .cast img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--color-pink-light);
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="https://i.pinimg.com/736x/61/7f/eb/617feb3c3cee9d8a25c0d5d5813902c8.jpg" alt="Jurassic Park Logo" />
-        </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul id="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#dinosaurs">Dinosaurs</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#more">More</a></li>
-        </ul>
-    </nav>
+  <h2>The Films</h2>
+  <div class="movie-container">
 
-    <main>
-        <section id="home">
-            <div class="hero-content">
-                <h2>Welcome to the Jurassic Universe</h2>
-                <p class="subtitle">An adventure 65 million years in the making.</p>
-            </div>
-        </section>
+    <!-- Jurassic Park (1993) -->
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg" alt="Jurassic Park (1993)">
+      <h3>Jurassic Park (1993)</h3>
+    </div>
 
-        <section id="about">
-            <div class="about-container">
-                <img src="https://i.pinimg.com/736x/d9/84/7e/d9847e48f154c42bedf1e30cecf77aa7.jpg" alt="Jurassic Park Gates" class="about-image" />
-                <div class="about-text">
-                    <h3>Where Prehistoric Wonders Come to Life</h3>
-                    <p>
-                        The Jurassic Park franchise explores the awe-inspiring and terrifying consequences of bringing dinosaurs back to life through genetic engineering. What begins as a dream to create the ultimate theme park quickly spirals into a desperate fight for survival, questioning the boundaries of science and the untamable power of nature.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- The Lost World (1997) -->
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Jurassic_Park_The_Lost_World_poster.jpg" alt="The Lost World (1997)">
+      <h3>The Lost World (1997)</h3>
+    </div>
 
-        <section id="dinosaurs">
-            <h2>Featured Dinosaurs</h2>
-            <div class="character-grid">
-                <div class="character-card">
-                    <img src="https://static.wikia.nocookie.net/jurassicpark/images/4/42/Jurassic_Park_Tyrannosaurus_Rex.png" alt="T-Rex">
-                    <h3>Tyrannosaurus Rex</h3>
-                </div>
-                <div class="character-card">
-                    <img src="https://static.wikia.nocookie.net/jurassicpark/images/8/8b/RebirthRaptor.png" alt="Velociraptor">
-                    <h3>Velociraptor</h3>
-                </div>
-                <div class="character-card">
-                    <img src="https://www.pngkey.com/png/detail/218-2182957_triceratops-triceratops-3d-model.png" alt="Triceratops">
-                    <h3>Triceratops</h3>
-                </div>
-                <div class="character-card">
-                    <img src="https://static.wikia.nocookie.net/jurassicpark/images/6/68/Spinosaurus_Hunter.Image.png" alt="Spinosaurus">
-                    <h3>Spinosaurus</h3>
-                </div>
-                <div class="character-card">
-                    <img src="https://static.wikia.nocookie.net/jurassicpark/images/e/eb/Jurassic_world_fallen_kingdom_indoraptor_3.0_by_sonichedgehog2-dcc96yw.png" alt="Indoraptor">
-                    <h3>Indoraptor</h3>
-                </div>
-                <div class="character-card">
-                    <img src="https://www.pngkey.com/png/detail/81-811153_mosasaurus-jurassic-world-dinosaurs-mosasaurus.png" alt="Mosasaurus">
-                    <h3>Mosasaurus</h3>
-                </div>
-            </div>
-        </section>
+    <!-- Jurassic Park III (2001) -->
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Jurassic_Park_III.jpg" alt="Jurassic Park III (2001)">
+      <h3>Jurassic Park III (2001)</h3>
+    </div>
 
-        <section id="movies">
-            <h2>The Films</h2>
-            <div id="movie-list" class="movie-container">
-                <div class="movie-card" onclick="showMovieDetail('jp1')">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg" alt="Jurassic Park">
-                    <h3>Jurassic Park (1993)</h3>
-                </div>
-                <div class="movie-card" onclick="showMovieDetail('jp2')">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FwYSk6jP1YuEcEcr04UYSmOIWr5uisyJiow9trJaDaB4xiB3z2UkE_D1tnVYSehzw_k&usqp=CAU" alt="The Lost World: Jurassic Park">
-                    <h3>The Lost World (1997)</h3>
-                </div>
-                <div class="movie-card" onclick="showMovieDetail('jp3')">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3swy-AtnCpEtO-CzR0H6-3ZiqVKhn-g23jkOGzHW31L98ybqA5J2I-KtjAExVgjImkAU&usqp=CAU" alt="Jurassic Park III">
-                    <h3>Jurassic Park III (2001)</h3>
-                </div>
-                <div class="movie-card" onclick="showMovieDetail('jw1')">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Jurassic_World_poster.jpg" alt="Jurassic World">
-                    <h3>Jurassic World (2015)</h3>
-                </div>
-            </div>
+    <!-- Jurassic World (2015) -->
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Jurassic_World_poster.jpg" alt="Jurassic World (2015)">
+      <h3>Jurassic World (2015)</h3>
+    </div>
 
-            <div id="movie-detail-container" style="display: none;">
-                <button onclick="backToMovieList()">← Back to Films</button>
-                <div id="movie-detail-content"></div>
-            </div>
-        </section>
+  </div>
 
-        <footer id="more">
-            <h2>A Pretty Prehistoric Journey Awaits 🦖💗</h2>
-            <p>Stay tuned for more prehistoric excitement and pink-colored adventures.</p>
-        </footer>
-    </main>
-
-    <script src="script.js"></script>
+  <h2>Main Cast</h2>
+  <div class="cast-container">
+    <div class="cast-card">
+      <img src="dr-alan-grant-jurassicpark.png" alt="Dr. Alan Grant">
+      <h3>Dr. Alan Grant</h3>
+    </div>
+    <div class="cast-card">
+      <img src="dr-ellie-sattler-jurassicpark.png" alt="Dr. Ellie Sattler">
+      <h3>Dr. Ellie Sattler</h3>
+    </div>
+    <div class="cast-card">
+      <img src="dr-ian-malcolm-jurassicpark.png" alt="Dr. Ian Malcolm">
+      <h3>Dr. Ian Malcolm</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/2GVnvYr/jeff-goldblum-png" alt="Jeff Goldblum">
+      <h3>Jeff Goldblum</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/ZbQKcH2/julianne-moore-png" alt="Julianne Moore">
+      <h3>Julianne Moore</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/3NPGahWT/sam-neill-png" alt="Sam Neill">
+      <h3>Sam Neill</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/ppgbjhdw/laura-dern-png" alt="Laura Dern">
+      <h3>Laura Dern</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/3NPGahWT/chris-pratt-png" alt="Chris Pratt">
+      <h3>Chris Pratt</h3>
+    </div>
+    <div class="cast-card">
+      <img src="https://imgbin.com/png/PpGbjhDw/bryce-dallas-howard-png" alt="Bryce Dallas Howard">
+      <h3>Bryce Dallas Howard</h3>
+    </div>
+  </div>
 </body>
 </html>
-
-      
-       
-              
-
-           
-   
-        
-              
-              
-   
