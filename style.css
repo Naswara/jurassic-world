@@ -374,22 +374,14 @@ footer#more h2 {
 }
 
 /* GAMES SECTION */
-#games {
-  padding: 4rem 2rem;
-  background: linear-gradient(to bottom right, #000000, rgba(255, 153, 204, 0.05));
-  border-radius: 20px;
-  margin-top: 4rem;
-}
-
-/* Judul Bagian "Dino Games" */
 #games .section-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--color-pink-light);
   text-align: center;
-  margin-bottom: 3rem;
   font-weight: bold;
-  text-shadow: 0 0 15px rgba(255, 153, 204, 0.6);
+  margin-bottom: 3rem;
+  text-shadow: 0 0 12px rgba(255, 153, 204, 0.6);
 }
 
 /* Grid Game Card */
