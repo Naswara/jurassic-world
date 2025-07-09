@@ -456,3 +456,92 @@ footer#more h2 {
   background-color: var(--color-pink-dark);
   color: var(--color-white);
 }
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 2px solid #f0f;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 20px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  background: #f0f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #fff;
+  color: #000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f0f;
+  text-shadow: 0 0 10px #f0f;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #111;
+  border: 2px solid #f0f;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #f0f;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  color: #f0f;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: square inside;
+  color: #ddd;
+}
