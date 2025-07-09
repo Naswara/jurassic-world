@@ -381,7 +381,7 @@ footer#more h2 {
 }
 
 /* Judul "Dino Games" sama seperti "Main Cast" */
-#games h2.section-title {
+#games .section-title {
   font-size: 3rem;
   font-family: var(--font-primary);
   color: var(--color-pink-light);
