@@ -374,7 +374,7 @@ footer#more h2 {
 }
 
 /* GAMES SECTION */
-#games .section-title {
+#games h2.section-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
@@ -382,6 +382,8 @@ footer#more h2 {
   text-align: center;
   margin-bottom: 3rem;
   text-shadow: 0 0 12px rgba(255, 102, 204, 0.6), 0 0 20px rgba(255, 102, 204, 0.4);
+  display: block;
+  width: 100%;
 }
 
 /* Judul "Games" */
