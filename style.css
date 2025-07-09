@@ -374,26 +374,20 @@ footer#more h2 {
 }
 
 /* GAMES SECTION */
-#games h2.section-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #ff66cc;
+#games {
+  padding: 4rem 2rem;
   text-align: center;
-  margin-bottom: 3rem;
-  text-shadow: 0 0 12px rgba(255, 102, 204, 0.6), 0 0 20px rgba(255, 102, 204, 0.4);
-  display: block;
-  width: 100%;
+  background: linear-gradient(to bottom, var(--color-pink-dark), var(--color-dark-gray));
 }
 
-/* Judul "Games" */
-#games .section-title {
-  font-family: 'Montserrat', sans-serif;
+/* Judul "Dino Games" sama seperti "Main Cast" */
+#games h2.section-title {
   font-size: 3rem;
+  font-family: var(--font-primary);
   color: var(--color-pink-light);
   text-align: center;
   margin-bottom: 3rem;
-  text-shadow: 0 0 10px rgba(255, 153, 204, 0.3);
+  text-shadow: 0 0 10px var(--color-pink-light), 0 0 20px rgba(255, 153, 204, 0.5);
 }
 
 /* Grid Game Card */
@@ -435,7 +429,7 @@ footer#more h2 {
   margin-top: 1rem;
   font-size: 1.4rem;
   color: var(--color-pink-dark);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-primary);
 }
 
 /* Deskripsi Game */
