@@ -26,6 +26,7 @@
             <li><a href="#movies">Movies</a></li>
             <li><a href="#cast">Cast</a></li>
             <li><a href="#games">Games</a></li>
+            <li><a href="#map">Games</a></li>
         </ul>
     </nav>
 
@@ -186,5 +187,54 @@
     </div>
 </section>
 
+<section id="maps">
+    <h2>Peta Dinosaurus</h2>
+    <p>Temukan lokasi-lokasi di dunia tempat fosil dinosaurus ditemukan!</p>
+  </header>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Script interaktif -->
+  <script>
+    const map = L.map('map').setView([0, 0], 2);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const dinos = [
+      {
+        name: "🦖 Tyrannosaurus Rex",
+        location: "Amerika Utara (Montana, AS)",
+        latlng: [47.0, -108.0]
+      },
+      {
+        name: "🦕 Brachiosaurus",
+        location: "Tanzania & Colorado, AS",
+        latlng: [-6.0, 34.0]
+      },
+      {
+        name: "🦖 Spinosaurus",
+        location: "Afrika Utara (Mesir)",
+        latlng: [26.0, 30.0]
+      },
+      {
+        name: "🦖 Velociraptor",
+        location: "Gobi, Mongolia",
+        latlng: [44.5, 105.0]
+      },
+      {
+        name: "🦕 Triceratops",
+        location: "Amerika Utara (Wyoming)",
+        latlng: [42.0, -107.5]
+      },
+      {
+        name: "🦈 Mosasaurus",
+        location: "Eropa Barat (Belanda)",
+        latlng: [52.1, 5.0]
+      }
 </body>
 </html>
