@@ -374,11 +374,14 @@ footer#more h2 {
 }
 
 /* GAMES SECTION */
-#games {
-  padding: 4rem 2rem;
-  background: linear-gradient(to bottom right, #000000, rgba(255, 153, 204, 0.05));
-  border-radius: 20px;
-  margin-top: 4rem;
+#games .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ff66cc;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 12px rgba(255, 102, 204, 0.6), 0 0 20px rgba(255, 102, 204, 0.4);
 }
 
 /* Judul "Games" */
