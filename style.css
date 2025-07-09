@@ -458,3 +458,41 @@ footer#more h2 {
   background-color: var(--color-pink-dark);
   color: var(--color-white);
 }
+
+/* Map Section */
+#maps {
+  padding: 40px 30px;
+}
+
+#map {
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    display: none;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+}
