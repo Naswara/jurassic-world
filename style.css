@@ -527,7 +527,7 @@ main {
   background: #111;
   border: 2px solid #f0f;
   border-radius: 10px;
-  padding: 20px;
+  overflow: hidden;
   box-shadow: 0 0 10px #f0f;
   transition: transform 0.3s ease;
 }
@@ -536,12 +536,19 @@ main {
   transform: scale(1.05);
 }
 
+.card img {
+  width: 100%;
+  display: block;
+}
+
 .card h2 {
   color: #f0f;
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 .card ul {
   list-style: square inside;
   color: #ddd;
+  margin: 0 15px 15px 15px;
 }
+
