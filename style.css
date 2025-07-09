@@ -374,14 +374,21 @@ footer#more h2 {
 }
 
 /* GAMES SECTION */
+#games {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #000000, rgba(255, 153, 204, 0.05));
+  border-radius: 20px;
+  margin-top: 4rem;
+}
+
+/* Judul "Games" */
 #games .section-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--color-pink-light);
   text-align: center;
-  font-weight: bold;
   margin-bottom: 3rem;
-  text-shadow: 0 0 12px rgba(255, 153, 204, 0.6);
+  text-shadow: 0 0 10px rgba(255, 153, 204, 0.3);
 }
 
 /* Grid Game Card */
