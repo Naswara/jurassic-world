@@ -531,10 +531,10 @@ main {
 }
 
 
- #dinosaur-park {
+#dinosaur-park {
   padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(to bottom, var(--color-pink-dark), var(--color-dark-gray));  
+  background: linear-gradient(to bottom, var(--color-pink-dark), var(--color-dark-gray));
 }
 
 #dinosaur-park .section-title {
@@ -589,5 +589,4 @@ main {
   color: var(--color-white);
   font-size: 1rem;
 }
-
 
