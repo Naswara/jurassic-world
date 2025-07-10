@@ -2,14 +2,13 @@
 :root {
     --color-black: #000000;
     --color-dark-gray: #1a1a1a;
-    --color-pink-dark: #b30059;   /* pink tua */
-    --color-pink-light: #ff99cc;  /* pink muda */
+    --color-pink-dark: #b30059;   
+    --color-pink-light: #ff99cc;  
     --color-white: #ffffff;
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 }
 
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +32,6 @@ h2, h3 {
     font-weight: 700;
 }
 
-/* Navigation */
 nav {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
@@ -80,7 +78,6 @@ nav {
     box-shadow: 0 5px 15px rgba(255, 153, 204, 0.4);
 }
 
-/* Home Section (Hero) */
 #home {
     display: flex;
     align-items: center;
@@ -104,7 +101,6 @@ nav {
     text-shadow: 1px 1px 3px var(--color-black);
 }
 
-/* About Section */
 #about {
     padding: 4rem 2rem;
     background: var(--color-dark-gray);
@@ -133,7 +129,7 @@ nav {
     max-width: 800px;
 }
 
-/* Dinosaurs & Movies Sections */
+
 #dinosaurs, #movies {
     padding: 4rem 2rem;
     text-align: center;
@@ -193,7 +189,6 @@ nav {
     padding: 1.5rem 1rem;
 }
 
-/* Movie Detail */
 #movie-detail-container {
     padding: 2rem;
     max-width: 1000px;
@@ -224,7 +219,6 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Footer */
 footer#more {
     background: var(--color-dark-gray);
     text-align: center;
@@ -238,7 +232,6 @@ footer#more h2 {
     margin-bottom: 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         padding: 1rem;
@@ -292,7 +285,6 @@ footer#more h2 {
     }
 }
 
-/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -308,7 +300,6 @@ footer#more h2 {
     background: var(--color-pink-light);
 }
 
-/* Main Cast Section Style */
 #cast {
     padding: 4rem 2rem;
     text-align: center;
@@ -323,7 +314,6 @@ footer#more h2 {
     text-shadow: 0 0 10px var(--color-pink-light), 0 0 20px rgba(255, 153, 204, 0.5);
 }
 
-/* Grid layout mirip dengan dinosaurs */
 #cast .character-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -332,7 +322,6 @@ footer#more h2 {
     margin: 0 auto;
 }
 
-/* Card style: gelap dengan blur dan border pink */
 #cast .character-card {
     background: rgba(30, 30, 30, 0.6);
     backdrop-filter: blur(5px);
@@ -344,14 +333,12 @@ footer#more h2 {
     text-align: center;
 }
 
-/* Hover glow pink & naik */
 #cast .character-card:hover {
     transform: translateY(-10px) scale(1.03);
     border-color: var(--color-pink-light);
     box-shadow: 0 15px 35px rgba(255, 153, 204, 0.3), 0 0 20px rgba(255, 153, 204, 0.3);
 }
 
-/* Judul film: pink muda, besar */
 .cast-movie-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -360,7 +347,6 @@ footer#more h2 {
     margin-bottom: 1rem;
 }
 
-/* Daftar pemain: putih, rapi */
 .cast-list {
     list-style-type: none;
     padding: 0;
@@ -373,14 +359,12 @@ footer#more h2 {
     font-family: var(--font-secondary);
 }
 
-/* GAMES SECTION */
 #games {
   padding: 4rem 2rem;
   text-align: center;
   background: linear-gradient(to bottom, var(--color-pink-dark), var(--color-dark-gray));
 }
 
-/* Judul "Dino Games" sama seperti "Main Cast" */
 #games .section-title {
   font-size: 3rem;
   font-family: var(--font-primary);
@@ -390,7 +374,6 @@ footer#more h2 {
   text-shadow: 0 0 10px var(--color-pink-light), 0 0 20px rgba(255, 153, 204, 0.5);
 }
 
-/* Grid Game Card */
 #games .character-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -399,7 +382,6 @@ footer#more h2 {
   margin: 0 auto;
 }
 
-/* Individual Card */
 #games .character-card {
   background-color: rgba(0, 0, 0, 0.65);
   border: 2px solid var(--color-pink-dark);
@@ -416,7 +398,6 @@ footer#more h2 {
   box-shadow: 0 0 25px rgba(255, 153, 204, 0.4);
 }
 
-/* Game Image */
 #games .character-card img {
   width: 100%;
   height: 250px;
@@ -424,7 +405,6 @@ footer#more h2 {
   border-bottom: 2px solid var(--color-pink-dark);
 }
 
-/* Nama Game */
 #games .character-card h3 {
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -432,14 +412,12 @@ footer#more h2 {
   font-family: var(--font-primary);
 }
 
-/* Deskripsi Game */
 #games .game-desc {
   margin: 0.5rem 1rem;
   color: var(--color-white);
   font-size: 1rem;
 }
 
-/* Tombol Play Now */
 #games .game-link {
   display: inline-block;
   margin-top: 0.8rem;
@@ -550,5 +528,64 @@ main {
   list-style: square inside;
   color: #ddd;
   margin: 0 15px 15px 15px;
+}
+
+#dinosaur-park {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, var(--color-pink-dark), var(--color-dark-gray));
+}
+
+#dinosaur-park .section-title {
+  font-size: 3rem;
+  font-family: var(--font-primary);
+  color: var(--color-pink-light);
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 10px var(--color-pink-light), 0 0 20px rgba(255, 153, 204, 0.5);
+}
+
+#dinosaur-park .character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#dinosaur-park .character-card {
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 2px solid var(--color-pink-dark);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 153, 204, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+#dinosaur-park .character-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 153, 204, 0.4);
+}
+
+#dinosaur-park .character-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-pink-dark);
+}
+
+#dinosaur-park .character-card h3 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--color-pink-dark);
+  font-family: var(--font-primary);
+}
+
+#dinosaur-park .game-desc {
+  margin: 0.5rem 1rem;
+  color: var(--color-white);
+  font-size: 1rem;
 }
 
